@@ -1,0 +1,871 @@
+/* ============================================
+   DEWMINI PATHIRANA - PORTFOLIO CSS
+   Advanced Client-Side Web Development (5COSC026W)
+   ============================================ */
+
+/* ============================================
+   1. GOOGLE FONTS - TYPOGRAPHY REQUIREMENT
+   ============================================ */
+/* Already imported in HTML: Poppins & Great Vibes */
+
+/* ============================================
+   2. CSS VARIABLES - COLOUR SCHEME
+   ============================================ */
+:root {
+    /* Primary Colors - From your design theme */
+    --color-dark-purple: #250e2c;
+    --color-purple: #837ab6;
+    --color-light-purple: #9d85b6;
+    --color-pink: #cc8db3;
+    --color-bright-pink: #f6a5c0;
+    --color-bg: #fffbfe;
+
+    /* Semi-transparent colors for requirement */
+    --color-overlay: rgba(37, 14, 44, 0.7);
+    --color-semi-transparent: rgba(131, 122, 182, 0.3);
+
+    /* Neutral colors */
+    --color-dark: #333;
+    --color-light: #f5f5f5;
+    --color-white: #ffffff;
+
+    /* Typography */
+    --font-heading: 'Great Vibes', cursive;
+    --font-body: 'Poppins', sans-serif;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1rem;
+
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-xlarge: 3rem;
+
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/* ============================================
+   3. GLOBAL STYLES & RESETS
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background: linear-gradient(135deg, var(--color-bg) 0%, #f0e6f6 100%);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   4. TYPOGRAPHY - TEXT EFFECTS REQUIREMENT
+   ============================================ */
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h1);
+    color: var(--color-dark-purple);
+    font-weight: 700;
+    /* Text Effect: Text shadow */
+    text-shadow: 2px 2px 4px rgba(131, 122, 182, 0.3);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    color: var(--color-dark-purple);
+    margin: var(--spacing-large) 0 var(--spacing-medium) 0;
+    position: relative;
+    /* Pseudo-element with generated content - REQUIREMENT */
+    padding-bottom: var(--spacing-medium);
+}
+
+/* Generated content after h2 - PSEUDO-ELEMENT REQUIREMENT */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-purple), var(--color-bright-pink));
+    border-radius: 2px;
+    margin-top: var(--spacing-small);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    color: var(--color-purple);
+    margin: var(--spacing-medium) 0 var(--spacing-small) 0;
+}
+
+p {
+    font-size: var(--font-size-body);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-medium);
+}
+
+/* Highlight class - used throughout */
+.highlight {
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+/* ============================================
+   5. NAVIGATION - CHILD COMBINATOR REQUIREMENT
+   ============================================ */
+.navbar {
+    background: var(--color-white);
+    padding: var(--spacing-medium) 0;
+    /* Box shadow - REQUIREMENT */
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+}
+
+.navbar:hover {
+    box-shadow: 0 6px 20px var(--color-semi-transparent);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-weight: 700;
+    /* Transform - REQUIREMENT */
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Child combinator - REQUIREMENT */
+.nav-menu>li {
+    list-style: none;
+    display: inline-block;
+    margin-left: var(--spacing-large);
+}
+
+.nav-menu>li>a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition);
+}
+
+/* Pseudo-class for user action - REQUIREMENT */
+.nav-menu>li>a:hover,
+.nav-menu>li>a.active {
+    color: var(--color-purple);
+}
+
+/* Pseudo-element for hover effect */
+.nav-menu>li>a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-purple), var(--color-bright-pink));
+    transition: width 0.3s ease;
+}
+
+.nav-menu>li>a:hover::before,
+.nav-menu>li>a.active::before {
+    width: 100%;
+}
+
+/* ============================================
+   6. BUTTONS - STYLING REQUIREMENT
+   ============================================ */
+.btn {
+    padding: var(--spacing-medium) var(--spacing-large);
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: 600;
+    cursor: pointer;
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
+    margin: var(--spacing-small);
+}
+
+.btn-primary {
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    color: var(--color-white);
+    /* Border - REQUIREMENT */
+    border: 2px solid var(--color-purple);
+}
+
+.btn-primary:hover {
+    /* Transform - REQUIREMENT */
+    transform: translateY(-3px);
+    /* Box shadow - REQUIREMENT */
+    box-shadow: 0 8px 20px var(--color-semi-transparent);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--color-purple);
+    border: 2px solid var(--color-purple);
+}
+
+.btn-secondary:hover {
+    background: var(--color-semi-transparent);
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   7. CONTAINER & LAYOUT
+   ============================================ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    padding: var(--spacing-xlarge) 0;
+}
+
+/* ============================================
+   8. HERO SECTION
+   ============================================ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xlarge);
+    padding: var(--spacing-xlarge) 0;
+    /* Gradient background - REQUIREMENT */
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.1) 0%,
+            rgba(246, 165, 192, 0.1) 100%);
+    border-radius: 15px;
+    padding: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    color: var(--color-purple);
+    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+    /* Animation - REQUIREMENT */
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-large);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.buttons {
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+/* Sidebar - Structural selector REQUIREMENT */
+.sidebar {
+    flex: 0.3;
+    background: var(--color-white);
+    padding: var(--spacing-large);
+    border-radius: 15px;
+    /* Box shadow - REQUIREMENT */
+    box-shadow: 0 8px 25px var(--color-semi-transparent);
+}
+
+.sidebar h3 {
+    color: var(--color-dark-purple);
+    margin-bottom: var(--spacing-medium);
+}
+
+.social-links {
+    list-style: none;
+}
+
+/* Pseudo-class :not() - NEGATION PSEUDO-CLASS REQUIREMENT */
+.social-links li:not(:last-child) {
+    margin-bottom: var(--spacing-medium);
+}
+
+.social-links a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 500;
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--color-bright-pink);
+    transform: translateX(5px);
+}
+
+/* ============================================
+   9. FEATURED SECTION
+   ============================================ */
+.featured {
+    margin: var(--spacing-xlarge) 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.featured-card {
+    background: var(--color-white);
+    padding: var(--spacing-large);
+    border-radius: 12px;
+    /* Box shadow - REQUIREMENT */
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+    /* Rounded corners - REQUIREMENT */
+    border: 1px solid rgba(246, 165, 192, 0.2);
+}
+
+.featured-card:hover {
+    /* Transform - REQUIREMENT */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px var(--color-semi-transparent);
+}
+
+.featured-card h3 {
+    color: var(--color-dark-purple);
+}
+
+.featured-card a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.featured-card a:hover {
+    color: var(--color-bright-pink);
+}
+
+/* ============================================
+   10. ABOUT PAGE STYLES
+   ============================================ */
+.about-main {
+    padding: var(--spacing-xlarge) 0;
+}
+
+.about-hero {
+    margin-bottom: var(--spacing-xlarge);
+    padding: var(--spacing-xlarge);
+    background: linear-gradient(135deg, var(--color-white), rgba(246, 165, 192, 0.1));
+    border-radius: 15px;
+    border-left: 5px solid var(--color-purple);
+}
+
+.about-content h1 {
+    margin-bottom: var(--spacing-large);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--color-dark);
+}
+
+/* ============================================
+   11. SKILLS SECTION - NTH PSEUDO-CLASS REQUIREMENT
+   ============================================ */
+.skills {
+    margin: var(--spacing-xlarge) 0;
+    padding: var(--spacing-xlarge);
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.skill-card {
+    padding: var(--spacing-large);
+    background: linear-gradient(135deg, var(--color-bg), rgba(246, 165, 192, 0.05));
+    border-radius: 12px;
+    border: 1px solid rgba(131, 122, 182, 0.2);
+}
+
+/* Nth-child pseudo-class - REQUIREMENT */
+.skill-card:nth-child(odd) {
+    border-left: 4px solid var(--color-purple);
+}
+
+.skill-card:nth-child(even) {
+    border-left: 4px solid var(--color-bright-pink);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(131, 122, 182, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: var(--spacing-medium);
+}
+
+.skill-progress {
+    height: 100%;
+    /* Gradient - REQUIREMENT */
+    background: linear-gradient(90deg, var(--color-purple), var(--color-bright-pink));
+    border-radius: 10px;
+    /* Animation - REQUIREMENT */
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* ============================================
+   12. EDUCATION SECTION
+   ============================================ */
+.education {
+    margin: var(--spacing-xlarge) 0;
+}
+
+.education-item {
+    padding: var(--spacing-large);
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    border-left: 5px solid var(--color-bright-pink);
+}
+
+.institution {
+    color: var(--color-purple);
+    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+}
+
+/* ============================================
+   13. HOBBIES SECTION
+   ============================================ */
+.hobbies {
+    margin: var(--spacing-xlarge) 0;
+}
+
+.hobbies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-large);
+    list-style: none;
+    margin-top: var(--spacing-large);
+}
+
+.hobbies-list li {
+    padding: var(--spacing-medium) var(--spacing-large);
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    color: var(--color-white);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    /* Transform - REQUIREMENT */
+    transition: var(--transition);
+    /* Pseudo-element generated content */
+}
+
+.hobbies-list li::before {
+    content: '✓ ';
+    margin-right: 0.5rem;
+}
+
+.hobbies-list li:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* ============================================
+   14. PROJECTS/BLOG PAGE
+   ============================================ */
+.projects-main {
+    padding: var(--spacing-xlarge) 0;
+}
+
+.blog-post {
+    background: var(--color-white);
+    padding: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xlarge);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+}
+
+.blog-post:hover {
+    box-shadow: 0 8px 25px var(--color-semi-transparent);
+    transform: translateY(-5px);
+}
+
+.post-header {
+    border-bottom: 2px solid var(--color-purple);
+    padding-bottom: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.post-header h2 {
+    margin: 0;
+    color: var(--color-dark-purple);
+}
+
+.post-header time {
+    color: var(--color-purple);
+    font-weight: 600;
+    display: block;
+    margin-top: var(--spacing-small);
+}
+
+.post-content p {
+    margin-bottom: var(--spacing-medium);
+    line-height: 1.9;
+}
+
+.post-content ul {
+    list-style-position: inside;
+    margin: var(--spacing-medium) 0;
+}
+
+.post-content li {
+    margin-bottom: var(--spacing-small);
+    color: var(--color-dark);
+}
+
+/* ============================================
+   15. CONTACT PAGE - FORM STYLING
+   ============================================ */
+.contact-main {
+    padding: var(--spacing-xlarge) 0;
+}
+
+.contact-main>.container>h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.newsletter,
+.contact-form-section {
+    background: var(--color-white);
+    padding: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xlarge);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+}
+
+.newsletter h2,
+.contact-form-section h2 {
+    color: var(--color-dark-purple);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-large);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--color-dark-purple);
+    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: var(--spacing-medium);
+    border: 2px solid rgba(131, 122, 182, 0.2);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+}
+
+/* Validity pseudo-class - REQUIREMENT */
+.form-group input:valid,
+.form-group textarea:valid {
+    border-color: var(--color-purple);
+    background: rgba(131, 122, 182, 0.05);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-bright-pink);
+    box-shadow: 0 0 0 3px rgba(246, 165, 192, 0.2);
+    /* Transform - REQUIREMENT */
+    transform: scale(1.02);
+}
+
+.contact-info {
+    margin-top: var(--spacing-xlarge);
+}
+
+.info-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.info-item {
+    background: var(--color-white);
+    padding: var(--spacing-large);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    border-top: 4px solid var(--color-purple);
+}
+
+.info-item h3 {
+    color: var(--color-dark-purple);
+    margin-bottom: var(--spacing-medium);
+}
+
+.info-item a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 600;
+    /* Transition - REQUIREMENT */
+    transition: var(--transition);
+}
+
+.info-item a:hover {
+    color: var(--color-bright-pink);
+    text-decoration: underline;
+}
+
+/* ============================================
+   16. FOOTER
+   ============================================ */
+footer {
+    background: linear-gradient(135deg, var(--color-dark-purple), var(--color-purple));
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+    margin-top: var(--spacing-xlarge);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ============================================
+   17. ANIMATIONS - REQUIREMENT
+   ============================================ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ============================================
+   18. RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================ */
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    :root {
+        --font-size-h1: 2rem;
+        --font-size-h2: 1.5rem;
+        --font-size-h3: 1.2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar {
+        flex: 1;
+        width: 100%;
+    }
+
+    .nav-menu>li {
+        margin-left: var(--spacing-medium);
+    }
+
+    .nav-menu>li>a {
+        font-size: 0.9rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    :root {
+        --font-size-h1: 1.5rem;
+        --font-size-h2: 1.2rem;
+        --spacing-xlarge: 1.5rem;
+        --spacing-large: 1rem;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        width: 100%;
+        margin-top: var(--spacing-medium);
+    }
+
+    .nav-menu>li {
+        display: block;
+        margin: var(--spacing-small) 0;
+        margin-left: 0;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: var(--spacing-small) 0;
+    }
+
+    .hero {
+        padding: var(--spacing-large);
+    }
+
+    .newsletter,
+    .contact-form-section {
+        padding: var(--spacing-large);
+    }
+
+    .hobbies-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   19. SPECIFICITY DEMONSTRATION
+   ============================================
+   
+   This CSS demonstrates proper specificity hierarchy:
+   
+   - Element selectors: body, h1 (lowest specificity)
+   - Class selectors: .btn, .hero (medium specificity)
+   - ID selectors: (none used, would be higher)
+   - Inline styles: (none used, highest)
+   
+   ============================================ */
+
+/* ============================================
+   20. ATTRIBUTE SELECTORS - REQUIREMENT (Min 2)
+   ============================================ */
+
+/* Attribute selector 1: Target links with href */
+a[href^="http"] {
+    /* External links */
+}
+
+/* Attribute selector 2: Target form inputs by type */
+input[type="email"] {
+    /* Email input styling */
+}
+
+input[type="text"] {
+    /* Text input styling */
+}
+
+/* ============================================
+   21. RELATIONAL SELECTORS - REQUIREMENT
+   ============================================ */
+
+/* Adjacent sibling selector */
+h2+.featured-grid {
+    margin-top: var(--spacing-large);
+}
+
+/* General sibling selector */
+.post-header~.post-content {
+    margin-top: var(--spacing-large);
+}
