@@ -722,6 +722,171 @@ main {
 }
 
 /* ============================================
+   SKILL ICONS CSS STYLING
+   ============================================ */
+
+/* Skill Icon Wrapper */
+.skill-icon-wrapper {
+    font-size: 2.5rem;
+    color: var(--color-purple);
+    margin-bottom: var(--spacing-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+
+    /* Gradient background for icon */
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.1) 0%,
+            rgba(246, 165, 192, 0.1) 100%);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.skill-item:hover .skill-icon-wrapper {
+    /* Icon background changes on hover */
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.2) 0%,
+            rgba(246, 165, 192, 0.2) 100%);
+
+    /* Icon color changes to bright pink on hover */
+    color: var(--color-bright-pink);
+
+    /* Icon animation on hover */
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Individual Font Awesome Icons - Specific Colors */
+
+/* React Icon - Blue */
+.skill-item:nth-child(1) .skill-icon-wrapper {
+    color: #61dafb;
+}
+
+.skill-item:nth-child(1):hover .skill-icon-wrapper {
+    color: #61dafb;
+}
+
+/* JavaScript Icon - Yellow */
+.skill-item:nth-child(2) .skill-icon-wrapper {
+    color: #f7df1e;
+}
+
+.skill-item:nth-child(2):hover .skill-icon-wrapper {
+    color: #f7df1e;
+}
+
+/* HTML5 Icon - Orange/Red */
+.skill-item:nth-child(3) .skill-icon-wrapper {
+    color: #e34c26;
+}
+
+.skill-item:nth-child(3):hover .skill-icon-wrapper {
+    color: #e34c26;
+}
+
+/* Mobile Icon - Custom Purple */
+.skill-item:nth-child(4) .skill-icon-wrapper {
+    color: var(--color-purple);
+}
+
+.skill-item:nth-child(4):hover .skill-icon-wrapper {
+    color: var(--color-bright-pink);
+}
+
+/* Node.js Icon - Green */
+.skill-category:nth-child(2) .skill-item:nth-child(1) .skill-icon-wrapper {
+    color: #68a063;
+}
+
+.skill-category:nth-child(2) .skill-item:nth-child(1):hover .skill-icon-wrapper {
+    color: #68a063;
+}
+
+/* Java Icon - Orange */
+.skill-category:nth-child(2) .skill-item:nth-child(2) .skill-icon-wrapper {
+    color: #f89820;
+}
+
+.skill-category:nth-child(2) .skill-item:nth-child(2):hover .skill-icon-wrapper {
+    color: #f89820;
+}
+
+/* Python Icon - Blue */
+.skill-category:nth-child(2) .skill-item:nth-child(3) .skill-icon-wrapper {
+    color: #3776ab;
+}
+
+.skill-category:nth-child(2) .skill-item:nth-child(3):hover .skill-icon-wrapper {
+    color: #3776ab;
+}
+
+/* REST API Icon - Custom Color */
+.skill-category:nth-child(2) .skill-item:nth-child(4) .skill-icon-wrapper {
+    color: var(--color-bright-pink);
+}
+
+.skill-category:nth-child(2) .skill-item:nth-child(4):hover .skill-icon-wrapper {
+    color: var(--color-purple);
+}
+
+/* MongoDB Icon - Green */
+.skill-category:nth-child(3) .skill-item:nth-child(1) .skill-icon-wrapper {
+    color: #00ed64;
+}
+
+.skill-category:nth-child(3) .skill-item:nth-child(1):hover .skill-icon-wrapper {
+    color: #00ed64;
+}
+
+/* SQL Icon - Blue */
+.skill-category:nth-child(3) .skill-item:nth-child(2) .skill-icon-wrapper {
+    color: #336791;
+}
+
+.skill-category:nth-child(3) .skill-item:nth-child(2):hover .skill-icon-wrapper {
+    color: #336791;
+}
+
+/* GitHub Icon - Black/Dark */
+.skill-category:nth-child(3) .skill-item:nth-child(3) .skill-icon-wrapper {
+    color: #333;
+}
+
+.skill-category:nth-child(3) .skill-item:nth-child(3):hover .skill-icon-wrapper {
+    color: #333;
+}
+
+/* Firebase Icon - Orange */
+.skill-category:nth-child(3) .skill-item:nth-child(4) .skill-icon-wrapper {
+    color: #ffa726;
+}
+
+.skill-category:nth-child(3) .skill-item:nth-child(4):hover .skill-icon-wrapper {
+    color: #ffa726;
+}
+
+/* ============================================
+   RESPONSIVE ICON SIZING
+   ============================================ */
+
+@media (max-width: 768px) {
+    .skill-icon-wrapper {
+        font-size: 2rem;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-icon-wrapper {
+        font-size: 1.8rem;
+        height: 45px;
+    }
+}
+
+
+/* ============================================
    12. EDUCATION SECTION
    ============================================ */
 .education {
