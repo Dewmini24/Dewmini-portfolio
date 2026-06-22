@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Dewmini Pathirana</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -25,73 +26,176 @@
 
     <main class="about-main">
         <div class="container">
-            <!-- ABOUT HERO -->
+            <!-- ABOUT HERO WITH PHOTO -->
             <section class="about-hero">
-                <article class="about-content">
-                    <h1>About <span class="highlight">Me</span></h1>
-                    <p>Hello! I'm Dewmini Pathirana, a dedicated Computer Science undergraduate at the Informatics
-                        Institute of Technology (IIT) in partnership with the University of Westminster, UK.</p>
-                    <p>I have practical experience in frontend and backend development, responsive UI design, and
-                        collaborative software projects. I'm proficient in JavaScript, React.js, Python, Node.js, and
-                        REST API development. My passion lies in creating efficient, user-friendly applications and
-                        solving complex technical challenges.</p>
-                    <p>Currently, I'm seeking internship opportunities to enhance my technical expertise, contribute to
-                        real-world projects, and grow as a software engineer. I'm particularly interested in full-stack
-                        development, AI-based applications, and building scalable systems.</p>
-                </article>
+                <div class="about-flex">
+                    <!-- LEFT: PHOTO -->
+                    <div class="about-photo-container">
+                        <img src="../images/Dewmini-Portfolio About.png" alt="Dewmini Pathirana - Professional Photo"
+                            class="about-photo">
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <article class="about-content">
+                        <h1>About <span class="highlight">Me</span></h1>
+                        <p>Hello! I'm Dewmini Pathirana, a dedicated Computer Science undergraduate at the Informatics
+                            Institute of Technology (IIT) in partnership with the University of Westminster, UK.</p>
+                        <p>I have practical experience in frontend and backend development, responsive UI design, and
+                            collaborative software projects. I'm proficient in JavaScript, React.js, Python, Node.js,
+                            and REST API development. My passion lies in creating efficient, user-friendly applications
+                            and solving complex technical challenges.</p>
+                        <p>Currently, I'm seeking internship opportunities to enhance my technical expertise, contribute
+                            to real-world projects, and grow as a software engineer. I'm particularly interested in
+                            full-stack development, AI-based applications, and building scalable systems.</p>
+                    </article>
+                </div>
             </section>
 
-            <!-- SKILLS SECTION -->
-            <section class="skills">
-                <h2>My <span class="highlight">Skills</span></h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>React.js</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
+            <!-- TECHNICAL SKILLS SECTION -->
+            <section class="skills-section">
+                <h2>Technical <span class="highlight">Skills</span></h2>
+                <p class="skills-intro">Languages, frameworks, and technologies I work with</p>
+
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">React.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-level">85%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                            <div class="skill-level">88%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5 & CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                            <div class="skill-level">92%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-level">90%</div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <h3>JavaScript</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js & Express.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="skill-level">82%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-level">80%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-level">85%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">REST APIs</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-level">85%</div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <h3>Node.js & Express.js</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 82%"></div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Database & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">MongoDB</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-level">80%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="skill-level">82%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-level">90%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Firebase</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 78%"></div>
+                            </div>
+                            <div class="skill-level">78%</div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <h3>Java</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
+                </div>
+            </section>
+
+            <!-- SOFT SKILLS SECTION -->
+            <section class="soft-skills-section">
+                <h2>Soft <span class="highlight">Skills</span></h2>
+                <p class="skills-intro">Professional and interpersonal abilities</p>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">💡</div>
+                        <h3>Problem Solving</h3>
+                        <p>Breaking down complex challenges and finding efficient solutions</p>
                     </div>
-                    <div class="skill-card">
-                        <h3>Python</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🤝</div>
+                        <h3>Teamwork</h3>
+                        <p>Collaborating effectively with others and contributing to team goals</p>
                     </div>
-                    <div class="skill-card">
-                        <h3>MongoDB & SQL</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">💬</div>
+                        <h3>Communication</h3>
+                        <p>Expressing ideas clearly and listening actively to others</p>
                     </div>
-                    <div class="skill-card">
-                        <h3>HTML5 & CSS3</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating user-friendly and visually appealing interfaces</p>
                     </div>
-                    <div class="skill-card">
-                        <h3>REST APIs</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🧠</div>
+                        <h3>Critical Thinking</h3>
+                        <p>Analyzing information objectively and making informed decisions</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">📚</div>
+                        <h3>Continuous Learning</h3>
+                        <p>Always seeking to improve and stay updated with new technologies</p>
                     </div>
                 </div>
             </section>
@@ -130,18 +234,6 @@
                         <p class="cert-date">2025</p>
                     </article>
                 </div>
-            </section>
-
-            <!-- SOFT SKILLS -->
-            <section class="hobbies">
-                <h2>Soft <span class="highlight">Skills</span></h2>
-                <ul class="hobbies-list">
-                    <li>Web Development</li>
-                    <li>UI/UX Design</li>
-                    <li>Communication</li>
-                    <li>Critical Thinking</li>
-                    <li>Teamwork</li>
-                </ul>
             </section>
         </div>
     </main>
