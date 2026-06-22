@@ -307,6 +307,27 @@ main {
     opacity: 0;
 }
 
+/* Profile Image Container */
+.profile-image-container {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--color-purple);
+    box-shadow: 0 8px 25px var(--color-semi-transparent);
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(246, 165, 192, 0.4);
+}
+
 /* Sidebar - Structural selector REQUIREMENT */
 .sidebar {
     flex: 0.3;
@@ -491,7 +512,55 @@ main {
 }
 
 /* ============================================
-   13. HOBBIES SECTION
+   13. CERTIFICATIONS SECTION
+   ============================================ */
+.certifications {
+    margin: var(--spacing-xlarge) 0;
+    padding: var(--spacing-xlarge);
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.certification-card {
+    padding: var(--spacing-large);
+    background: linear-gradient(135deg, var(--color-bg), rgba(246, 165, 192, 0.05));
+    border-radius: 12px;
+    border-left: 4px solid var(--color-bright-pink);
+    transition: var(--transition);
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--color-semi-transparent);
+}
+
+.certification-card h3 {
+    color: var(--color-dark-purple);
+    margin-bottom: var(--spacing-small);
+}
+
+.cert-issuer {
+    color: var(--color-purple);
+    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+}
+
+.cert-date {
+    color: var(--color-bright-pink);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   14. HOBBIES SECTION
    ============================================ */
 .hobbies {
     margin: var(--spacing-xlarge) 0;
@@ -564,6 +633,33 @@ main {
     font-weight: 600;
     display: block;
     margin-top: var(--spacing-small);
+}
+
+.project-role {
+    color: var(--color-bright-pink);
+    font-weight: 600;
+    font-style: italic;
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.project-link {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+    margin-top: var(--spacing-medium);
+}
+
+.project-link:hover {
+    color: var(--color-bright-pink);
+}
+
+.post-content h4 {
+    color: var(--color-dark-purple);
+    font-size: 1.2rem;
+    margin: var(--spacing-large) 0 var(--spacing-medium) 0;
 }
 
 .post-content p {
@@ -869,3 +965,7 @@ h2+.featured-grid {
 .post-header~.post-content {
     margin-top: var(--spacing-large);
 }
+
+/* ============================================
+   END OF CSS - All requirements included
+   ============================================ */
