@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dewmini Pathirana - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">Dewmini</a>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,61 +26,136 @@
         </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <main>
-        <div class="container">
-            <!-- HERO SECTION -->
-            <section class="hero">
-                <article class="hero-content">
-                    <h1>Hi, I'm <span class="highlight">Dewmini Pathirana</span></h1>
-                    <p class="intro-text">Computer Science Student @ IIT | Full-Stack Developer</p>
-                    <p class="description">Dedicated to creating efficient, user-friendly applications and solving
-                        complex technical challenges through modern web technologies.</p>
-                    <div class="buttons">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                </article>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Dewmini</span></h1>
+                    <p class="hero-subtitle">Full-Stack Developer | Web Development Enthusiast | Tech Innovator</p>
+                    <p class="hero-description">
+                        I craft beautiful, responsive web applications with modern technologies.
+                        Specializing in React.js, Node.js, and full-stack development.
+                    </p>
 
-                <!-- SIDEBAR WITH PROFILE IMAGE -->
+                    <!-- SOCIAL ICONS ON HERO -->
+                    <div class="hero-social-links">
+                        <a href="mailto:dewminipathirana04@gmail.com" class="social-icon-hero email" title="Send Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dewmini-pathirana-28558a332/" target="_blank"
+                            class="social-icon-hero linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Dewmini24" target="_blank" class="social-icon-hero github"
+                            title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+
                 <aside class="sidebar">
-                    <div class="profile-image-container">
-                        <img src="../images/Dewmini-Portfolio Home.png " alt="Dewmini Pathirana" class="profile-image">
+                    <div class="profile-image-wrapper">
+                        <img src="../images/Dewmini-Portfolio Home.png" alt="Dewmini Pathirana - Profile Photo" class="profile-image">
                     </div>
-                    <h3>Follow Me</h3>
-                    <ul class="social-links">
-                        <li><a href="https://github.com/Dewmini24" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/dewmini-pathirana-28558a332/"
-                                target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:dewminipathirana04@gmail.com">Email</a></li>
-                    </ul>
                 </aside>
-            </section>
+            </div>
+        </section>
 
-            <!-- FEATURED SECTION -->
-            <section class="featured">
-                <h2>Recent <span class="highlight">Projects</span></h2>
+        <!-- FEATURED PROJECTS SECTION -->
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+
                 <div class="featured-grid">
-                    <article class="featured-card">
-                        <h3>EduMath LK - Learning Platform</h3>
-                        <p>Full-Stack AI-based learning platform with real-time collaboration, synchronized whiteboard,
-                            and responsive teacher/student dashboards.</p>
-                        <p><strong>Tech:</strong> Node.js, React.js, Socket.io, MongoDB</p>
-                        <a href="https://github.com/Tharumika/edumathlk" target="_blank">View Project →</a>
+                    <article class="project-card">
+                        <h3>EduMath LK</h3>
+                        <p class="project-description">AI Learning Platform for Mathematics</p>
+                        <p class="project-tech">React.js • Node.js • Socket.io • MongoDB</p>
+                        <p class="project-role">Full-Stack Developer</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tharumika/edumathlk" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </article>
-                    <article class="featured-card">
+
+                    <article class="project-card">
                         <h3>Smart Campus REST API</h3>
-                        <p>RESTful API for campus management system with room/sensor management, nested resources, and
-                            structured JSON responses.</p>
-                        <p><strong>Tech:</strong> Java, JAX-RS, Jersey, Maven</p>
-                        <a href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank">View Project →</a>
+                        <p class="project-description">RESTful API for Campus Management System</p>
+                        <p class="project-tech">Java • JAX-RS • Jersey • Maven</p>
+                        <p class="project-role">Backend Developer</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Personal Portfolio</h3>
+                        <p class="project-description">Responsive Portfolio Website</p>
+                        <p class="project-tech">HTML5 • CSS3 • JavaScript • GitHub</p>
+                        <p class="project-role">Full-Stack Developer</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Dewmini24/Dewmini-portfolio" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </article>
                 </div>
-            </section>
-        </div>
+
+                <div class="view-all-projects">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+        </section>
+
+        <!-- QUICK CONTACT SECTION (BEFORE FOOTER) -->
+        <section class="quick-contact">
+            <div class="container">
+                <h2>Let's <span class="highlight">Connect</span></h2>
+                <p class="contact-subtitle">Reach out through any of these channels</p>
+
+                <div class="quick-contact-links">
+                    <!-- EMAIL -->
+                    <div class="quick-contact-item">
+                        <div class="quick-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:dewminipathirana04@gmail.com">dewminipathirana04@gmail.com</a></p>
+                    </div>
+
+                    <!-- LINKEDIN -->
+                    <div class="quick-contact-item">
+                        <div class="quick-icon-wrapper">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/dewmini-pathirana-28558a332/" target="_blank">Dewmini
+                                Pathirana</a></p>
+                    </div>
+
+                    <!-- GITHUB -->
+                    <div class="quick-contact-item">
+                        <div class="quick-icon-wrapper">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/Dewmini24" target="_blank">Dewmini24</a></p>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">Send Message</a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Dewmini Pathirana. All rights reserved.</p>
     </footer>

@@ -285,6 +285,276 @@ main {
     flex: 1;
 }
 
+.hero-social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing-large);
+    margin: var(--spacing-xlarge) 0;
+    flex-wrap: wrap;
+}
+
+.social-icon-hero {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+/* EMAIL ICON - RED */
+.social-icon-hero.email {
+    color: #ea4335;
+    background: rgba(234, 67, 53, 0.1);
+    border-color: rgba(234, 67, 53, 0.3);
+}
+
+.social-icon-hero.email:hover {
+    background: #ea4335;
+    color: white;
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 10px 25px rgba(234, 67, 53, 0.3);
+}
+
+/* LINKEDIN ICON - BLUE */
+.social-icon-hero.linkedin {
+    color: #0077b5;
+    background: rgba(0, 119, 181, 0.1);
+    border-color: rgba(0, 119, 181, 0.3);
+}
+
+.social-icon-hero.linkedin:hover {
+    background: #0077b5;
+    color: white;
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 119, 181, 0.3);
+}
+
+/* GITHUB ICON - BLACK */
+.social-icon-hero.github {
+    color: #333;
+    background: rgba(51, 51, 51, 0.1);
+    border-color: rgba(51, 51, 51, 0.3);
+}
+
+.social-icon-hero.github:hover {
+    background: #333;
+    color: white;
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.3);
+}
+
+/* ============================================
+   QUICK CONTACT SECTION
+   ============================================ */
+
+.quick-contact {
+    margin: var(--spacing-xlarge) 0;
+    padding: var(--spacing-xlarge);
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.05) 0%,
+            rgba(246, 165, 192, 0.05) 100%);
+    border-radius: 15px;
+    border: 1px solid var(--color-semi-transparent);
+}
+
+.quick-contact h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: var(--color-purple);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-xlarge);
+    font-style: italic;
+}
+
+/* QUICK CONTACT LINKS GRID */
+.quick-contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xlarge);
+}
+
+/* QUICK CONTACT ITEM */
+.quick-contact-item {
+    padding: var(--spacing-xlarge);
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(246, 165, 192, 0.2);
+}
+
+.quick-contact-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--color-semi-transparent);
+    border-color: var(--color-bright-pink);
+}
+
+/* QUICK ICON WRAPPER */
+.quick-icon-wrapper {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-large);
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.1) 0%,
+            rgba(246, 165, 192, 0.1) 100%);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.quick-contact-item:hover .quick-icon-wrapper {
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.2) 0%,
+            rgba(246, 165, 192, 0.2) 100%);
+    transform: scale(1.1);
+}
+
+/* EMAIL ICON - QUICK CONTACT */
+.quick-contact-item:nth-child(1) .quick-icon-wrapper {
+    color: #ea4335;
+}
+
+.quick-contact-item:nth-child(1):hover .quick-icon-wrapper {
+    color: #ea4335;
+}
+
+/* LINKEDIN ICON - QUICK CONTACT */
+.quick-contact-item:nth-child(2) .quick-icon-wrapper {
+    color: #0077b5;
+}
+
+.quick-contact-item:nth-child(2):hover .quick-icon-wrapper {
+    color: #0077b5;
+}
+
+/* GITHUB ICON - QUICK CONTACT */
+.quick-contact-item:nth-child(3) .quick-icon-wrapper {
+    color: #333;
+}
+
+.quick-contact-item:nth-child(3):hover .quick-icon-wrapper {
+    color: #333;
+}
+
+/* QUICK CONTACT ITEM HEADING */
+.quick-contact-item h3 {
+    color: var(--color-dark-purple);
+    font-weight: 700;
+    margin-bottom: var(--spacing-small);
+    font-family: var(--font-body);
+}
+
+/* QUICK CONTACT ITEM LINK */
+.quick-contact-item p a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.quick-contact-item p a:hover {
+    color: var(--color-bright-pink);
+    text-decoration: underline;
+}
+
+/* QUICK CONTACT BUTTON */
+.quick-contact .btn {
+    display: block;
+    margin: var(--spacing-large) auto 0;
+    text-align: center;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .hero-social-links {
+        justify-content: center;
+    }
+
+    .social-icon-hero {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+
+    .quick-contact {
+        padding: var(--spacing-large);
+    }
+
+    .quick-contact-links {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-large);
+    }
+
+    .quick-contact-item {
+        padding: var(--spacing-large);
+    }
+
+    .quick-icon-wrapper {
+        font-size: 2.3rem;
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-social-links {
+        justify-content: center;
+        gap: var(--spacing-medium);
+    }
+
+    .social-icon-hero {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .quick-contact {
+        padding: var(--spacing-medium);
+    }
+
+    .quick-contact-links {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-medium);
+    }
+
+    .quick-contact-item {
+        padding: var(--spacing-large);
+    }
+
+    .quick-icon-wrapper {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .quick-contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
 .intro-text {
     font-size: 1.3rem;
     color: var(--color-purple);
@@ -326,6 +596,158 @@ main {
 .profile-image:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 35px rgba(246, 165, 192, 0.4);
+}
+
+/* ============================================
+   PROFILE IMAGE - LEFT SIDE POSITIONING
+   Move image from right to left
+   ============================================ */
+
+/* HERO SECTION - REORDERED */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xlarge);
+    padding: var(--spacing-xlarge);
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.1) 0%,
+            rgba(246, 165, 192, 0.1) 100%);
+    border-radius: 15px;
+    margin-bottom: var(--spacing-xlarge);
+    flex-wrap: wrap;
+}
+
+/* SIDEBAR ON LEFT - Using Order Property */
+.sidebar {
+    order: -1;
+    /* Moves sidebar to the left */
+    flex: 0 0 auto;
+    background: transparent;
+    /* Remove white background for left side */
+    padding: 0;
+    /* Remove padding */
+    border-radius: 0;
+    /* Remove border radius */
+    box-shadow: none;
+    /* Remove shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: var(--spacing-xlarge);
+}
+
+/* HERO CONTENT - On Right */
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Profile Image Container */
+.profile-image-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+.profile-image-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+/* Profile Image - LEFT SIDE STYLING */
+.profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--color-purple);
+    box-shadow: 0 12px 35px var(--color-semi-transparent);
+    transition: var(--transition);
+    display: block;
+}
+
+.profile-image:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 18px 45px rgba(246, 165, 192, 0.4);
+    border-color: var(--color-bright-pink);
+}
+
+/* RESPONSIVE - TABLET (768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: var(--spacing-large);
+    }
+
+    .sidebar {
+        order: 0;
+        /* Reset order on mobile */
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .hero-content {
+        text-align: center;
+        order: 2;
+        /* Content below image on mobile */
+    }
+
+    .profile-image {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+/* RESPONSIVE - MOBILE (480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: var(--spacing-large);
+        gap: var(--spacing-medium);
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-social-links {
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   OPTIONAL: Add Left Accent/Border
+   Makes the left side more visual
+   ============================================ */
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-purple), var(--color-bright-pink));
+    border-radius: 4px;
+    display: none;
+    /* Enable if you want this */
 }
 
 /* About Photo Section */
@@ -451,12 +873,21 @@ main {
     font-weight: 500;
     /* Transition - REQUIREMENT */
     transition: var(--transition);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .social-links a:hover {
     color: var(--color-bright-pink);
     transform: translateX(5px);
+}
+
+/* Social link icon sizing */
+.social-links a i {
+    font-size: 1.1rem;
+    width: 1.2rem;
+    text-align: center;
 }
 
 /* ============================================
@@ -1180,42 +1611,286 @@ main {
     transform: scale(1.02);
 }
 
+/* CONTACT INFO SECTION */
 .contact-info {
-    margin-top: var(--spacing-xlarge);
+    margin: var(--spacing-xlarge) 0;
+    padding: var(--spacing-xlarge);
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.05) 0%,
+            rgba(246, 165, 192, 0.05) 100%);
+    border-radius: 15px;
+    border: 1px solid var(--color-semi-transparent);
 }
 
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--color-purple);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-xlarge);
+    font-style: italic;
+}
+
+/* INFO ITEMS GRID */
 .info-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-large);
-    margin-top: var(--spacing-large);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-xlarge);
 }
 
+/* INDIVIDUAL INFO ITEM */
 .info-item {
+    padding: var(--spacing-xlarge);
     background: var(--color-white);
-    padding: var(--spacing-large);
     border-radius: 12px;
-    text-align: center;
     box-shadow: 0 4px 15px var(--color-semi-transparent);
-    border-top: 4px solid var(--color-purple);
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(246, 165, 192, 0.2);
 }
 
-.info-item h3 {
-    color: var(--color-dark-purple);
-    margin-bottom: var(--spacing-medium);
+.info-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--color-semi-transparent);
+    border-color: var(--color-bright-pink);
 }
 
-.info-item a {
-    color: var(--color-purple);
-    text-decoration: none;
-    font-weight: 600;
-    /* Transition - REQUIREMENT */
+/* INFO ICON WRAPPER */
+.info-icon-wrapper {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-large);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.1) 0%,
+            rgba(246, 165, 192, 0.1) 100%);
+    border-radius: 50%;
     transition: var(--transition);
 }
 
-.info-item a:hover {
+.info-item:hover .info-icon-wrapper {
+    background: linear-gradient(135deg,
+            rgba(131, 122, 182, 0.2) 0%,
+            rgba(246, 165, 192, 0.2) 100%);
+    transform: scale(1.1);
+}
+
+/* EMAIL ICON - BLUE */
+.info-item:nth-child(1) .info-icon-wrapper {
+    color: #ea4335;
+}
+
+.info-item:nth-child(1):hover .info-icon-wrapper {
+    color: #ea4335;
+}
+
+/* LINKEDIN ICON - BLUE */
+.info-item:nth-child(2) .info-icon-wrapper {
+    color: #0077b5;
+}
+
+.info-item:nth-child(2):hover .info-icon-wrapper {
+    color: #0077b5;
+}
+
+/* GITHUB ICON - BLACK */
+.info-item:nth-child(3) .info-icon-wrapper {
+    color: #333;
+}
+
+.info-item:nth-child(3):hover .info-icon-wrapper {
+    color: #333;
+}
+
+/* INFO ITEM HEADING */
+.info-item h3 {
+    color: var(--color-dark-purple);
+    font-weight: 700;
+    margin-bottom: var(--spacing-small);
+    font-family: var(--font-body);
+}
+
+/* INFO ITEM LINK */
+.info-item p a {
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    word-break: break-all;
+}
+
+.info-item p a:hover {
     color: var(--color-bright-pink);
     text-decoration: underline;
+}
+
+/* CONTACT LABEL */
+.contact-label {
+    font-size: 0.85rem;
+    color: var(--color-semi-transparent);
+    margin-top: var(--spacing-small);
+    font-style: italic;
+}
+
+/* ============================================
+   SOCIAL LINKS QUICK ACCESS
+   ============================================ */
+
+.social-links-quick {
+    text-align: center;
+    padding: var(--spacing-xlarge);
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+}
+
+.social-links-quick h3 {
+    color: var(--color-dark-purple);
+    margin-bottom: var(--spacing-large);
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-large);
+    flex-wrap: wrap;
+}
+
+/* SOCIAL ICON LINK */
+.social-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    transition: var(--transition);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+/* EMAIL ICON */
+.social-icon.email {
+    color: #ea4335;
+    background: rgba(234, 67, 53, 0.1);
+    border-color: rgba(234, 67, 53, 0.3);
+}
+
+.social-icon.email:hover {
+    background: #ea4335;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(234, 67, 53, 0.3);
+}
+
+/* LINKEDIN ICON */
+.social-icon.linkedin {
+    color: #0077b5;
+    background: rgba(0, 119, 181, 0.1);
+    border-color: rgba(0, 119, 181, 0.3);
+}
+
+.social-icon.linkedin:hover {
+    background: #0077b5;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 119, 181, 0.3);
+}
+
+/* GITHUB ICON */
+.social-icon.github {
+    color: #333;
+    background: rgba(51, 51, 51, 0.1);
+    border-color: rgba(51, 51, 51, 0.3);
+}
+
+.social-icon.github:hover {
+    background: #333;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.3);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding: var(--spacing-large);
+    }
+
+    .info-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-large);
+    }
+
+    .info-item {
+        padding: var(--spacing-large);
+    }
+
+    .info-icon-wrapper {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-icons {
+        gap: var(--spacing-medium);
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        padding: var(--spacing-medium);
+    }
+
+    .info-items {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-medium);
+    }
+
+    .info-item {
+        padding: var(--spacing-large);
+    }
+
+    .info-icon-wrapper {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-links-quick {
+        padding: var(--spacing-large);
+    }
+
+    .social-icons {
+        gap: var(--spacing-small);
+    }
+
+    .social-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
 }
 
 /* ============================================
