@@ -1359,24 +1359,175 @@ main {
 
 
 /* ============================================
-   12. EDUCATION SECTION
+   12. EDUCATION SECTION - MODERN DESIGN
    ============================================ */
 .education {
     margin: var(--spacing-xlarge) 0;
-}
-
-.education-item {
-    padding: var(--spacing-large);
+    padding: var(--spacing-xlarge);
     background: var(--color-white);
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 4px 15px var(--color-semi-transparent);
-    border-left: 5px solid var(--color-bright-pink);
 }
 
+.education h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xlarge);
+}
+
+/* Education Items Container */
+.education-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xlarge);
+    position: relative;
+    padding: var(--spacing-xlarge) 0;
+}
+
+/* Timeline Line (vertical) */
+.education-items::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--color-purple), var(--color-bright-pink));
+}
+
+/* Modern Education Item */
+.education-item {
+    padding: var(--spacing-xlarge);
+    background: linear-gradient(135deg, rgba(131, 122, 182, 0.05), transparent);
+    border-radius: 12px;
+    border: 1px solid rgba(131, 122, 182, 0.15);
+    transition: var(--transition);
+    position: relative;
+    margin-left: var(--spacing-xlarge);
+}
+
+/* Timeline Dot */
+.education-item::before {
+    content: '🎓';
+    position: absolute;
+    left: -54px;
+    top: var(--spacing-xlarge);
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 3px solid var(--color-bright-pink);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px var(--color-semi-transparent);
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px var(--color-semi-transparent);
+    border-color: var(--color-bright-pink);
+    background: linear-gradient(135deg, rgba(131, 122, 182, 0.1), rgba(246, 165, 192, 0.05));
+}
+
+.education-item:hover::before {
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(246, 165, 192, 0.4);
+}
+
+/* Education Item Heading */
+.education-item h3 {
+    color: var(--color-dark-purple);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-small);
+}
+
+/* Institution Info */
 .institution {
     color: var(--color-purple);
     font-weight: 600;
-    margin-bottom: var(--spacing-small);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-medium);
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background: linear-gradient(120deg, var(--color-purple), var(--color-bright-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Duration Info */
+.education-duration {
+    font-size: 0.9rem;
+    color: var(--color-bright-pink);
+    font-weight: 600;
+    margin-bottom: var(--spacing-medium);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.education-duration::before {
+    content: '⏱️';
+    font-size: 1rem;
+}
+
+/* Education Description */
+.education-item p {
+    color: var(--color-dark);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .education-items::before {
+        left: 24px;
+    }
+
+    .education-item {
+        margin-left: 80px;
+        padding: var(--spacing-large);
+    }
+
+    .education-item::before {
+        left: -40px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-items::before {
+        left: 16px;
+    }
+
+    .education-item {
+        margin-left: 60px;
+        padding: var(--spacing-large);
+    }
+
+    .education-item::before {
+        left: -30px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        top: var(--spacing-large);
+    }
+
+    .education-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .education-item p {
+        font-size: 0.9rem;
+    }
 }
 
 /* ============================================
@@ -1982,6 +2133,10 @@ footer p {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
+    .education {
+        padding: var(--spacing-large);
+    }
 }
 
 /* Mobile screens (480px and below) */
@@ -2030,6 +2185,10 @@ footer p {
 
     .hobbies-list {
         grid-template-columns: 1fr;
+    }
+
+    .education {
+        padding: var(--spacing-large);
     }
 }
 
