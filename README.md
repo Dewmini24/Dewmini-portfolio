@@ -2,7 +2,7 @@
 
 A modern, responsive, and professional portfolio website showcasing my skills, projects, education, and experience as a Full-Stack Developer.
 
-**Live Demo:** [GitHub Repository](https://github.com/Dewmini24/Dewmini-portfolio)  
+**Live Demo:** [GitHub Repository](https://Dewmini24.github.io/Dewmini-portfolio)  
 **Contact:** [dewminipathirana04@gmail.com](mailto:dewminipathirana04@gmail.com)
 
 ---
@@ -19,7 +19,6 @@ A modern, responsive, and professional portfolio website showcasing my skills, p
 - [Responsive Design](#responsive-design)
 - [Deployment](#deployment)
 - [Contact](#contact)
-- [License](#license)
 
 ---
 
@@ -207,15 +206,6 @@ cd Dewmini-portfolio
 - Open `pages/index.html` in your browser
 - Or use VS Code Live Server extension
 - Navigate using the menu
-
-### **Alternative: GitHub Pages**
-```bash
-# Push to GitHub with gh-pages branch
-git push origin main
-# Enable GitHub Pages in repository settings
-# Your site will be live at: https://Dewmini24.github.io/Dewmini-portfolio
-```
-
 ---
 
 ## 🎨 Customization
@@ -404,124 +394,12 @@ F12 → Toggle device toolbar (Ctrl+Shift+M)
 
 ---
 
-## 🚀 Deployment
-
-### **GitHub Pages**
-
-1. **Enable GitHub Pages:**
-   - Go to repository Settings
-   - Scroll to "GitHub Pages"
-   - Select `main` branch
-   - Save
-
-2. **Your live site:**
-   ```
-   https://Dewmini24.github.io/Dewmini-portfolio
-   ```
-
-### **Alternative Hosting**
-
-**Netlify:**
-- Connect GitHub repo
-- Deploy automatically
-- Free SSL certificate
-
-**Vercel:**
-- Similar to Netlify
-- Great for Next.js projects
-
-**Custom Domain:**
-- Buy domain from GoDaddy, Namecheap, etc.
-- Point to GitHub Pages
-- Add CNAME file in repository
-
----
-
-## 📝 Git Workflow
-
-### **Initial Setup**
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your-email@gmail.com"
-```
-
-### **Making Changes**
-```bash
-# Check status
-git status
-
-# Add changes
-git add .
-
-# Commit
-git commit -m "Update portfolio - add modern timeline design"
-
-# Push
-git push origin main
-```
-
-### **View Commits**
-```bash
-git log --oneline
-```
-
----
-
-## 🔒 Best Practices
-
-### **Security**
-- ✅ No sensitive information in code
-- ✅ Use environment variables for secrets
-- ✅ Don't expose API keys
-- ✅ Keep dependencies updated
-
-### **Performance**
-- ✅ Optimize images (use WebP)
-- ✅ Minify CSS & JavaScript
-- ✅ Use CSS variables for maintainability
-- ✅ Lazy load images if needed
-
-### **Accessibility**
-- ✅ Semantic HTML
-- ✅ Alt text for images
-- ✅ Keyboard navigation
-- ✅ Color contrast
-- ✅ ARIA labels
-
-### **SEO**
-- ✅ Meta tags in HTML
-- ✅ Descriptive titles
-- ✅ Semantic HTML
-- ✅ Mobile-friendly
-- ✅ Fast loading time
-
----
 
 ## 📞 Contact
 
 **Email:** [dewminipathirana04@gmail.com](mailto:dewminipathirana04@gmail.com)  
 **GitHub:** [Dewmini24](https://github.com/Dewmini24)  
 **LinkedIn:** [Dewmini Pathirana](https://www.linkedin.com/in/dewmini-pathirana-28558a332/)
-
----
-
-## 📜 License
-
-This project is open source and available under the MIT License.
-
-```
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ---
 
@@ -542,80 +420,6 @@ copies or substantial portions of the Software.
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [CSS Tricks](https://css-tricks.com/)
 - [Web.dev](https://web.dev/)
-
----
-
-## 🤝 Contributing
-
-Found a bug or want to improve the portfolio?
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## ✅ Checklist for Updates
-
-Before deploying changes:
-
-- [ ] All links work correctly
-- [ ] Images load properly
-- [ ] Responsive on mobile (480px)
-- [ ] Responsive on tablet (768px)
-- [ ] Responsive on desktop (1200px)
-- [ ] All forms validate
-- [ ] No console errors
-- [ ] Hover effects work
-- [ ] Navigation smooth
-- [ ] Social links correct
-
----
-
-## 📈 Future Improvements
-
-- [ ] Add blog section
-- [ ] Implement dark mode toggle
-- [ ] Add project filtering
-- [ ] Create interactive demo section
-- [ ] Add testimonials section
-- [ ] Implement backend for forms
-- [ ] Add analytics tracking
-- [ ] Create downloadable resume
-
----
-
-## 🎉 Thanks for Visiting!
-
-Thank you for checking out my portfolio! Feel free to reach out if you have any questions or opportunities.
-
-**Last Updated:** 2025  
-**Version:** 2.0 (Modern Redesign)
-
----
-
-## 📖 Additional Notes
-
-### **Coursework Requirements Met**
-✅ HTML5 semantic markup  
-✅ CSS3 with advanced features  
-✅ Responsive design  
-✅ CSS variables  
-✅ Pseudo-classes and pseudo-elements  
-✅ Flexbox and Grid layouts  
-✅ Animations and transitions  
-✅ Professional design  
-
-### **Portfolio Highlights**
-✅ Modern timeline design for education  
-✅ Interactive hover effects  
-✅ Professional gradient styling  
-✅ Social media integration  
-✅ Skills showcase with progress bars  
-✅ Project portfolio display  
-✅ Contact section with forms  
 
 ---
 
