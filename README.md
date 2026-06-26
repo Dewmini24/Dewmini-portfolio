@@ -2,7 +2,7 @@
 
 A modern, responsive, and professional portfolio website showcasing my skills, projects, education, and experience as a Full-Stack Developer.
 
-**Live Demo:** [dewmini24.github.io/Dewmini-portfolio](https://dewmini24.github.io/Dewmini-portfolio/)  
+**Live Site:** [dewmini24.github.io/Dewmini-portfolio](https://dewmini24.github.io/Dewmini-portfolio/)  
 **Contact:** dewminipathirana04@gmail.com
 
 ---
