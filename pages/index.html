@@ -1,93 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewmini Pathirana - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E23C64">
+<title>Dewmini Pathirana | Full-Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Dewmini</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<header class="nav"><a class="brand" href="index.html">Dewmini</a><nav style="display:flex;gap:.25rem"><a class="tab" href="index.html" aria-current="page">Home</a><a class="tab" href="about.html">About</a><a class="tab" href="projects.html">Experience</a><a class="tab" href="contact.html">Contact</a></nav></header>
+<main class="wrap">
+<section class="card glass hero">
+<img src="../images/Dewmini-Portfolio Home.png" alt="Portrait of Dewmini Pathirana">
+<div class="text">
+<span class="status">Software Engineering Intern at Capital Maharaja Group</span>
+<h1>Dewmini Pathirana</h1>
+<p class="sub">Full-stack developer and Computer Science undergraduate at IIT, in partnership with the University of Westminster. I build responsive React interfaces and the Node.js APIs behind them.</p>
+<div class="row"><a class="btn primary" href="projects.html">View my work</a><a class="btn" href="contact.html">Get in touch</a></div>
+</div></section>
+<section class="bento" aria-label="Highlights">
+<a href="projects.html" target="_blank" rel="noopener" class="widget glass wide"><div class="icon"><i class="fa-solid fa-shirt"></i></div><h3>Costume Management System</h3><p class="meta">Stein Studio. Costume, location, approval, notification and user-management screens for a production web app.</p><div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Node.js</span><span class="chip">SQL</span></div></a>
+<a href="https://github.com/Tharumika/edumathlk" target="_blank" rel="noopener" class="widget glass "><div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div><h3>EduMath LK</h3><p class="meta">AI-based learning platform with a real-time synchronized classroom and whiteboard.</p><div class="chips"><span class="chip">Socket.io</span><span class="chip">MongoDB</span></div></a>
+<a href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank" rel="noopener" class="widget glass "><div class="icon"><i class="fa-solid fa-building-columns"></i></div><h3>Smart Campus REST API</h3><p class="meta">Room and sensor management with nested resources and structured JSON.</p><div class="chips"><span class="chip">Java</span><span class="chip">JAX-RS</span><span class="chip">Maven</span></div></a>
+<div class="widget glass wide"><div class="icon"><i class="fa-solid fa-layer-group"></i></div><h3>Stack</h3><p class="meta">What I work with day to day.</p><div class="chips"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span><span class="chip">SQL</span><span class="chip">Git</span></div></div>
+<div class="widget glass"><div class="icon"><i class="fa-solid fa-link"></i></div><h3>Find me</h3>
+<div class="row"><a class="btn" href="https://github.com/Dewmini24" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/dewmini-pathirana-28558a332/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></div></div>
+</section>
+</main>
+<footer>&copy; 2026 Dewmini Pathirana</footer>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <div class="container">
-            <!-- HERO SECTION -->
-            <section class="hero">
-                <article class="hero-content">
-                    <h1>Hi, I'm <span class="highlight">Dewmini Pathirana</span></h1>
-                    <p class="intro-text">Computer Science Student @ IIT | Full-Stack Developer</p>
-                    <p class="description">Dedicated to creating efficient, user-friendly applications and solving
-                        complex technical challenges through modern web technologies.</p>
-                    <div class="buttons">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                </article>
-
-                <!-- SIDEBAR WITH PROFILE IMAGE -->
-                <aside class="sidebar">
-                    <div class="profile-image-container">
-                        <img src="../images/Dewmini-Portfolio Home.png" alt="Dewmini Pathirana" class="profile-image">
-                    </div>
-                    <h3>Follow Me</h3>
-                    <ul class="social-links">
-                        <li><a href="https://github.com/Dewmini24" target="_blank">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a></li>
-                        <li><a href="https://www.linkedin.com/in/dewmini-pathirana-28558a332/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i> LinkedIn
-                            </a></li>
-                        <li><a href="mailto:dewminipathirana04@gmail.com">
-                                <i class="fa-solid fa-envelope"></i> Email
-                            </a></li>
-                    </ul>
-                </aside>
-            </section>
-
-            <!-- FEATURED SECTION -->
-            <section class="featured">
-                <h2>Recent <span class="highlight">Projects</span></h2>
-                <div class="featured-grid">
-                    <article class="featured-card">
-                        <h3>EduMath LK - Learning Platform</h3>
-                        <p>Full-Stack AI-based learning platform with real-time collaboration, synchronized whiteboard,
-                            and responsive teacher/student dashboards.</p>
-                        <p><strong>Tech:</strong> Node.js, React.js, Socket.io, MongoDB</p>
-                        <a href="https://github.com/Tharumika/edumathlk" target="_blank">View Project →</a>
-                    </article>
-                    <article class="featured-card">
-                        <h3>Smart Campus REST API</h3>
-                        <p>RESTful API for campus management system with room/sensor management, nested resources, and
-                            structured JSON responses.</p>
-                        <p><strong>Tech:</strong> Java, JAX-RS, Jersey, Maven</p>
-                        <a href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank">View Project →</a>
-                    </article>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Dewmini Pathirana. All rights reserved.</p>
-    </footer>
 </body>
-
 </html>

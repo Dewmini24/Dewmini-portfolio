@@ -1,282 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Dewmini Pathirana</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E23C64">
+<title>About | Dewmini Pathirana</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Dewmini</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<header class="nav"><a class="brand" href="index.html">Dewmini</a><nav style="display:flex;gap:.25rem"><a class="tab" href="index.html">Home</a><a class="tab" href="about.html" aria-current="page">About</a><a class="tab" href="projects.html">Experience</a><a class="tab" href="contact.html">Contact</a></nav></header>
+<main class="wrap">
+<section class="card glass hero">
+<img class="about-photo" src="../images/Dewmini-Portfolio About.png" alt="Dewmini Pathirana">
+<div class="text"><h1>About me</h1>
+<p class="sub">I'm a Computer Science undergraduate at the Informatics Institute of Technology (IIT), studying with the University of Westminster, UK.</p>
+<p class="sub">I work across frontend and backend: React interfaces, REST APIs, SQL and MongoDB. Right now I'm an intern on a production costume management system, where I also debug integrations and prepare deployments. I'm most interested in full-stack work and AI-based applications.</p></div></section>
+<section class="card glass"><h2>Technical skills</h2><div class="cols">
+<div class="stack"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Tailwind CSS</span></div></div>
+<div class="stack"><h3>Backend</h3><div class="chips"><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">REST APIs</span></div></div>
+<div class="stack"><h3>Database</h3><div class="chips"><span class="chip">MongoDB</span><span class="chip">SQL</span></div></div>
+<div class="stack"><h3>Tools and practices</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Responsive UI</span><span class="chip">API integration</span><span class="chip">Debugging</span></div></div>
+</div></section>
+<section class="cols">
+<div class="card glass stack"><h2>Education</h2>
+<div><h3>BSc Computer Science</h3><p class="meta">Informatics Institute of Technology (Sri Lanka) with the University of Westminster (UK)<br>September 2024 – 2028 (expected)</p></div>
+<div><h3>Foundation Certificate in Higher Education, IT</h3><p class="meta">Informatics Institute of Technology (Sri Lanka)<br>September 2023 – June 2024. Grade: Merit</p></div></div>
+<div class="card glass stack"><h2>Certifications</h2>
+<div><h3>Professional Certificate in Machine Learning</h3><p class="meta">Informatics Institute of Technology, 2025</p></div>
+<div><h3>Python Practice Operations</h3><p class="meta">Certificate of completion, LinkedIn, 2025</p></div></div>
+</section>
+</main>
+<footer>&copy; 2026 Dewmini Pathirana</footer>
 
-    <main class="about-main">
-        <div class="container">
-            <!-- ABOUT HERO WITH CENTERED IMAGE -->
-            <section class="about-hero-centered">
-                <!-- CENTERED IMAGE ON TOP -->
-                <div class="about-image-center">
-                    <img src="../images/Dewmini-Portfolio About.png" alt="Dewmini Pathirana - Professional Photo"
-                        class="about-photo-centered">
-                </div>
-
-                <!-- CONTENT BELOW IMAGE -->
-                <article class="about-content-centered">
-                    <h1>About <span class="highlight">Me</span></h1>
-                    <p>Hello! I'm Dewmini Pathirana, a dedicated Computer Science undergraduate at the Informatics
-                        Institute of Technology (IIT) in partnership with the University of Westminster, UK.</p>
-                    <p>I have practical experience in frontend and backend development, responsive UI design, and
-                        collaborative software projects. I'm proficient in JavaScript, React.js, Python, Node.js, and
-                        REST API development. My passion lies in creating efficient, user-friendly applications and
-                        solving complex technical challenges.</p>
-                    <p>Currently, I'm seeking internship opportunities to enhance my technical expertise, contribute to
-                        real-world projects, and grow as a software engineer. I'm particularly interested in full-stack
-                        development, AI-based applications, and building scalable systems.</p>
-                </article>
-            </section>
-
-            <!-- TECHNICAL SKILLS SECTION WITH ICONS -->
-            <section class="skills-section">
-                <h2>Technical <span class="highlight">Skills</span></h2>
-                <p class="skills-intro">Languages, frameworks, and technologies I work with</p>
-
-                <!-- Frontend Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend Development</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <div class="skill-name">React.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 85%"></div>
-                            </div>
-                            <div class="skill-level">85%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 88%"></div>
-                            </div>
-                            <div class="skill-level">88%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="skill-name">HTML5 & CSS3</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 92%"></div>
-                            </div>
-                            <div class="skill-level">92%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <div class="skill-name">Responsive Design</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 90%"></div>
-                            </div>
-                            <div class="skill-level">90%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Backend Development</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="skill-name">Node.js & Express.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 82%"></div>
-                            </div>
-                            <div class="skill-level">82%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="skill-name">Java</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 80%"></div>
-                            </div>
-                            <div class="skill-level">80%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-name">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 85%"></div>
-                            </div>
-                            <div class="skill-level">85%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fas fa-cube"></i>
-                            </div>
-                            <div class="skill-name">REST APIs</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 85%"></div>
-                            </div>
-                            <div class="skill-level">85%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database Skills -->
-                <div class="skill-category">
-                    <h3 class="category-title">Database & Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div class="skill-name">MongoDB</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 80%"></div>
-                            </div>
-                            <div class="skill-level">80%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 82%"></div>
-                            </div>
-                            <div class="skill-level">82%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="skill-name">Git & GitHub</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 90%"></div>
-                            </div>
-                            <div class="skill-level">90%</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon-wrapper">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <div class="skill-name">Firebase</div>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="width: 78%"></div>
-                            </div>
-                            <div class="skill-level">78%</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SOFT SKILLS SECTION -->
-            <section class="soft-skills-section">
-                <h2>Soft <span class="highlight">Skills</span></h2>
-                <p class="skills-intro">Professional and interpersonal abilities</p>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">💡</div>
-                        <h3>Problem Solving</h3>
-                        <p>Breaking down complex challenges and finding efficient solutions</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">🤝</div>
-                        <h3>Teamwork</h3>
-                        <p>Collaborating effectively with others and contributing to team goals</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">💬</div>
-                        <h3>Communication</h3>
-                        <p>Expressing ideas clearly and listening actively to others</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">🎨</div>
-                        <h3>UI/UX Design</h3>
-                        <p>Creating user-friendly and visually appealing interfaces</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">🧠</div>
-                        <h3>Critical Thinking</h3>
-                        <p>Analyzing information objectively and making informed decisions</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">📚</div>
-                        <h3>Continuous Learning</h3>
-                        <p>Always seeking to improve and stay updated with new technologies</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- EDUCATION -->
-            <section class="education">
-                <h2><span class="highlight">Education</span></h2>
-                <article class="education-item">
-                    <h3>BSc Computer Science</h3>
-                    <p class="institution">University of Westminster (UK) | Informatics Institute of Technology (Sri
-                        Lanka)</p>
-                    <p><strong>Duration:</strong> September 2024 – 2028 (Expected)</p>
-                    <p>Bachelor of Science in Computer Science with focus on software engineering, web development, and
-                        modern technologies.</p>
-                </article>
-                <article class="education-item">
-                    <h3>Foundation Certificate in Higher Education - IT</h3>
-                    <p class="institution">Informatics Institute of Technology (Sri Lanka)</p>
-                    <p><strong>Grade:</strong> Merit | <strong>Duration:</strong> September 2023 – June 2024</p>
-                    <p>Foundation program providing comprehensive IT knowledge and programming fundamentals.</p>
-                </article>
-            </section>
-
-            <!-- CERTIFICATIONS -->
-            <section class="certifications">
-                <h2><span class="highlight">Certifications</span></h2>
-                <div class="certifications-grid">
-                    <article class="certification-card">
-                        <h3>Professional Certificate in Machine Learning</h3>
-                        <p class="cert-issuer">Informatics Institute of Technology (IIT Campus)</p>
-                        <p class="cert-date">2025</p>
-                    </article>
-                    <article class="certification-card">
-                        <h3>Certificate of Completion - Python Practice Operations</h3>
-                        <p class="cert-issuer">LinkedIn Learning</p>
-                        <p class="cert-date">2025</p>
-                    </article>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Dewmini Pathirana. All rights reserved.</p>
-    </footer>
 </body>
-
 </html>

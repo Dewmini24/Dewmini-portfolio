@@ -1,128 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience & Projects - Dewmini Pathirana</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E23C64">
+<title>Experience | Dewmini Pathirana</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Dewmini</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<header class="nav"><a class="brand" href="index.html">Dewmini</a><nav style="display:flex;gap:.25rem"><a class="tab" href="index.html">Home</a><a class="tab" href="about.html">About</a><a class="tab" href="projects.html" aria-current="page">Experience</a><a class="tab" href="contact.html">Contact</a></nav></header>
+<main class="wrap">
+<section class="card glass stack"><h1>Experience</h1><p class="sub">Industry work first, then the projects I built at university.</p></section>
+<article class="card glass stack"><div><h2>Software Engineering Intern, Capital Maharaja Group</h2><p class="meta">Costume Management System for Stein Studio. June 2026 – present</p></div><div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">SQL</span></div><ul class="list"><li>Built frontend features for a production-oriented web app: costume, location, approval, notification and user-management screens.</li><li>Integrated REST APIs from a Node.js/Express backend with a SQL-based data layer.</li><li>Added form validation, loading states, search, confirmation dialogs, responsive layouts and empty states.</li><li>Fixed integration issues across API responses, authentication, database workflows, email notifications and deployment configuration.</li><li>Worked with another developer on integration, testing, Git workflows and client handover.</li></ul></article>
+<article class="card glass stack"><div><h2>EduMath LK, AI-Based Learning Platform</h2><p class="meta">Full-Stack Developer</p></div><div class="chips"><span class="chip">Node.js</span><span class="chip">React.js</span><span class="chip">Socket.io</span><span class="chip">MongoDB</span><span class="chip">Express.js</span></div><ul class="list"><li>Built a synchronized virtual classroom with Socket.io for real-time whiteboard updates and teacher/student state.</li><li>Developed the Teacher Management Dashboard, a responsive React interface for student interactions and class scheduling.</li><li>Designed RESTful APIs with Node.js and Express.js, with CRUD operations on MongoDB.</li><li>Debugged concurrent WebSocket connection issues and improved stability during live sessions.</li></ul><a class="btn" href="https://github.com/Tharumika/edumathlk" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>View on GitHub</a></article>
+<article class="card glass stack"><div><h2>Smart Campus REST API</h2><p class="meta">Backend Developer</p></div><div class="chips"><span class="chip">Java</span><span class="chip">JAX-RS (Jersey)</span><span class="chip">Maven</span><span class="chip">Tomcat</span><span class="chip">JSON</span></div><ul class="list"><li>Built a RESTful API for room and sensor management with nested resources.</li><li>Added custom exception handling, thread-safe in-memory storage and structured JSON responses that follow REST principles.</li></ul><a class="btn" href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>View on GitHub</a></article>
+<article class="card glass stack"><div><h2>Portfolio Website</h2><p class="meta">Personal project</p></div><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">GitHub Pages</span></div><ul class="list"><li>Designed and built this responsive portfolio to show projects, skills and contact details.</li><li>Deployed on GitHub Pages.</li></ul><a class="btn" href="https://github.com/Dewmini24/Dewmini-portfolio" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>View on GitHub</a></article>
+</main>
+<footer>&copy; 2026 Dewmini Pathirana</footer>
 
-    <main class="projects-main">
-        <div class="container">
-            <h1>My <span class="highlight">Projects</span></h1>
-
-            <!-- PROJECT 1: EDUMATH LK -->
-            <article class="blog-post">
-                <header class="post-header">
-                    <h2>EduMath LK - AI-Based Learning Platform</h2>
-                    <p class="project-role">Full-Stack Developer</p>
-                    <time datetime="2024-06-01">September 2026 - March 2026</time>
-                </header>
-                <section class="post-content">
-                    <p><strong>Tech Stack:</strong> Node.js, React.js, Socket.io, MongoDB, Express.js</p>
-                    <p>An innovative AI-based learning platform designed to provide real-time collaboration between
-                        teachers and students in a virtual classroom environment.</p>
-                    <h4>Key Achievements:</h4>
-                    <ul>
-                        <li><strong>Engineered Real-Time Collaboration:</strong> Architected a synchronized virtual
-                            classroom using Socket.io, enabling low-latency whiteboard updates and real-time state
-                            synchronization between teacher and student interfaces.</li>
-                        <li><strong>Developed Core Dashboards:</strong> Built the Teacher Management Dashboard from
-                            scratch, streamlining student interactions and class scheduling through a dynamic,
-                            responsive UI.</li>
-                        <li><strong>Architected Scalable Backend:</strong> Designed and deployed robust RESTful APIs
-                            using Node.js and Express.js, managing complex data flows and ensuring efficient CRUD
-                            operations with MongoDB.</li>
-                        <li><strong>Optimized System Performance:</strong> Debugged and resolved critical bottlenecks
-                            related to concurrent WebSocket connections, improving platform stability during
-                            high-traffic live sessions.</li>
-                    </ul>
-                    <p><a href="https://github.com/Tharumika/edumathlk" target="_blank" class="project-link">View on
-                            GitHub →</a></p>
-                </section>
-            </article>
-
-            <!-- PROJECT 2: SMART CAMPUS API -->
-            <article class="blog-post">
-                <header class="post-header">
-                    <h2>Smart Campus REST API</h2>
-                    <p class="project-role">Backend Developer</p>
-                    <time datetime="2024-03-15">April 2026</time>
-                </header>
-                <section class="post-content">
-                    <p><strong>Tech Stack:</strong> Java, JAX-RS (Jersey), REST API, Maven, Tomcat, JSON</p>
-                    <p>A robust RESTful API for a Smart Campus system designed to manage rooms, sensors, and other
-                        campus resources efficiently.</p>
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li><strong>Room & Sensor Management:</strong> Implemented comprehensive endpoints for managing
-                            campus rooms and sensors with full CRUD operations.</li>
-                        <li><strong>Nested Resources:</strong> Designed nested resource structures following REST
-                            principles for better API organization.</li>
-                        <li><strong>Custom Exception Handling:</strong> Built custom exception handlers for graceful
-                            error management and informative error responses.</li>
-                        <li><strong>Thread-Safe In-Memory Storage:</strong> Implemented thread-safe data structures
-                            ensuring data consistency during concurrent requests.</li>
-                        <li><strong>Structured JSON Responses:</strong> Developed consistent JSON response formats
-                            following REST best practices.</li>
-                    </ul>
-                    <p><a href="https://github.com/Dewmini24/SmartCampusAPI" target="_blank" class="project-link">View
-                            on GitHub →</a></p>
-                </section>
-            </article>
-
-            <!-- PROJECT 3: PORTFOLIO WEBSITE -->
-            <article class="blog-post">
-                <header class="post-header">
-                    <h2>Personal Portfolio Website</h2>
-                    <p class="project-role">Full-Stack Developer</p>
-                    <time datetime="2025-06-21">June 2025</time>
-                </header>
-                <section class="post-content">
-                    <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, GitHub, GitHub Pages</p>
-                    <p>A modern, responsive portfolio website designed to showcase my projects, skills, and technical
-                        expertise to potential employers and collaborators.</p>
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li><strong>Responsive Design:</strong> Implemented mobile-first responsive design with
-                            breakpoints for tablet (768px) and mobile (480px) devices.</li>
-                        <li><strong>Modern UI Principles:</strong> Applied contemporary web design principles with
-                            gradient backgrounds, smooth animations, and interactive elements.</li>
-                        <li><strong>Semantic HTML5:</strong> Used proper semantic HTML5 elements for better
-                            accessibility and SEO.</li>
-                        <li><strong>Advanced CSS3:</strong> Implemented CSS3 features including gradients, transforms,
-                            transitions, and keyframe animations.</li>
-                        <li><strong>Version Control:</strong> Utilized Git and GitHub for project management and version
-                            control.</li>
-                        <li><strong>Deployment:</strong> Deployed on GitHub Pages for easy accessibility and sharing.
-                        </li>
-                    </ul>
-                    <p><a href="https://github.com/Dewmini24/Dewmini-portfolio" target="_blank"
-                            class="project-link">View on GitHub →</a></p>
-                </section>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Dewmini Pathirana. All rights reserved.</p>
-    </footer>
 </body>
-
 </html>

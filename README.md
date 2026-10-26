@@ -24,7 +24,7 @@ A modern, responsive, and professional portfolio website showcasing my skills, p
 ## ✨ Features
 
 ### Modern Design
-- 🎨 Professional gradient color scheme (Purple & Pink)
+- 🎨 Coral Wave palette with iOS-style Liquid Glass panels
 - 📱 Fully responsive on all devices
 - ✨ Smooth animations and hover effects
 - 🌙 Light theme with elegant styling
